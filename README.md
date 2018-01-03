@@ -1,5 +1,5 @@
 # VScode User Snippets 
 ## Handlebars
-Please checkout documation in [hbs](/tree/master/hbs) folder
+Please checkout documation in [hbs](/hbs) folder
 ## javascript
-Please checkout documation in [javascript](/tree/master/javascript) folder
+Please checkout documation in [javascript](/javascript) folder
