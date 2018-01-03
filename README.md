@@ -22,7 +22,7 @@
 [prmfe](#prmfe-partial-modules-form-error)|partial modules form error|Extract error partials from `modules/form` file
 [prmfi](#prmfi-partial-modules-form-input)|partial modules form input|Extract `input` partials from `modules/form` file
 [prmfir](#prmfir-partial-modules-form-input-radio)|partial modules form input radio | Extract input `input[type="radio"]` partials from `modules/form` file
-[prmfic](#prmfir-partial-modules-form-input-checkbox)|partial modules form input checkbox | Extract `input[type="checkbox"]` partials from `modules/form` file
+[prmfic](#prmfic-partial-modules-form-input-checkbox)|partial modules form input checkbox | Extract `input[type="checkbox"]` partials from `modules/form` file
 [prmfif](#prmfif-partial-modules-form-input-file)|partial modules form input file | Extract `input[type="file"]` partials from `modules/form` file
 [prmft](#prmft-partials-modules-form-textarea)|partial modules form textarea| Extract textarea partials from `modules/form` file
 ---
@@ -35,7 +35,7 @@
 [prmfftp](#prmfftp-partial-modules-form-field-timepicker)|partial modules form field timepicker | Extract [input](#prmfi-partial-modules-form-input) with time icon, inside [form-field](#flf-form-layout-field)
 [prmfff](#prmfff-partial-modules-form-field-file)|partial modules form field file | Extract [input-file](#prmfif-partial-modules-form-input-file) inside [form-field](#flf-form-layout-field)
 [prmffs](#prmffs-partial-modules-form-field-select)|partial modules form field select | Extract select with respoctive parse `object` or `arrary` inside [form-field](#flf-form-layout-field)
-[prmfft](#prmffs-partial-modules-form-field-textarea)|partial modules form field textarea | Extract [textarea](#prmft-partials-modules-form-textarea) inside [form-field](#flf-form-layout-field)
+[prmfft](#prmfft-partial-modules-form-field-textarea)|partial modules form field textarea | Extract [textarea](#prmft-partials-modules-form-textarea) inside [form-field](#flf-form-layout-field)
 
 
 
