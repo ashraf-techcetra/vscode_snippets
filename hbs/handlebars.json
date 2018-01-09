@@ -259,5 +259,22 @@
 		"prefix": "icons",
 		"body": "{{> modules/icons name='${1|home,docs,logout,settings|}' }}",
 		"description": "List of all webicons"
+	},
+	// section form 
+	"Section box" : {
+		"prefix": "sb",
+		"body": [
+			"<section>",
+				"<article class='box'>",
+					"<header class='box-header'>",
+						"${1:header}",
+					"</header>",
+					"<main class='box-content'>",
+						"${0:Content}",
+					"</main>",
+				"</article>",
+			"</section>"
+		],
+		"description": "Execute section box"
 	}
 }
