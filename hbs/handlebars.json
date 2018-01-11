@@ -1,278 +1,341 @@
 // all given snipets are based on url4u developed with love by prataprockerss. 
 // please visit prataprockerss.github.io/url4u/
 // Follow me on https://github.com/prataprockerss for more rocking code.
-
 {
-	"form layout" : {
+	"form layout": {
 		"prefix": "fl",
 		"body": [
 			"<form action='' method='post' class='check-form'>",
-				"\t<div class='form-layout'>",
-					"\t\t$0",
-				"\t</div>",
+			"\t<div class='form-layout'>",
+			"\t\t$0",
+			"\t</div>",
 			"</form>"
 		],
 		"description": "form and form layout"
 	},
-	"Form layout row" : {
+	"Form layout row": {
 		"prefix": "flr",
 		"body": [
 			"<div class='form-row'>",
-				"\t$0",
+			"\t$0",
 			"</div>"
 		],
 		"description": "form layout row"
 	},
-	"Form layout row with field" : {
+	"Form layout row with field": {
 		"prefix": "flrf",
 		"body": [
 			"<div class='form-row'>",
-				"\t<div class='form-field'>",
-					"\t\t$0",
-				"\t</div>",
+			"\t<div class='form-field'>",
+			"\t\t$0",
+			"\t</div>",
 			"</div>"
 		],
 		"description": "form layout row"
 	},
-	"Form layout field" : {
+	"Form layout field": {
 		"prefix": "flf",
 		"body": [
 			"<div class='form-field'>",
-				"\t$0",
+			"\t$0",
 			"</div>"
 		],
 		"description": "form layout form field"
 	},
 	// partials 
-	"Basic Partials" :{
+	"Basic Partials": {
 		"prefix": "pr",
 		"body": [
 			"{{> ${1:/path/to/partials}",
-				"\t${0:partials options}",
+			"\t${0:partials options}",
 			"}}"
 		],
 		"description": "Handlebars basic partials code"
 	},
-	"Partials from layouts" : {
+	"Partials from layouts": {
 		"prefix": "prl",
 		"body": [
 			"{{> layout/${1|head,header,footer,nav|}",
-				"\t${0:partials options}",
+			"\t${0:partials options}",
 			"}}"
 		],
 		"description": "Choose partials from layout folder"
 	},
-	"Partials from modules" : {
+	"Partials from modules": {
 		"prefix": "prm",
 		"body": [
 			"{{> modules/${1|breadcrumbs,component,form,icons,loader,select,overlay/open,overlay/close|}",
-				"\t${0:partials options}",
+			"\t${0:partials options}",
 			"}}"
 		],
 		"description": "Choose partials from modules folder"
 	},
-	"input Partials from modules/form " : {
+	"input Partials from modules/form ": {
 		"prefix": "prmfi",
 		"body": [
 			"{{> modules/form field_type='input'",
-				"\ttype='${1|text,password,number,date,email,button,reset,submit,radio,checkbox|}'",
-				"\tname='${2:field_name}'",
-				"\t${3:class='${4:input_class}'}",
-				"\t${5:placeholder='${6:input_placeholder}'}",
-				"\t${7:id='${8:input_id}'}",
+			"\ttype='${1|text,password,number,date,email,button,reset,submit,radio,checkbox|}'",
+			"\tname='${2:field_name}'",
+			"\t${3:class='${4:input_class}'}",
+			"\t${5:placeholder='${6:input_placeholder}'}",
+			"\t${7:id='${8:input_id}'}",
 			"}}"
 		],
 		"description": "partial input from 'modules/form'"
 	},
-	"label partials from modules/form" : {
+	"label partials from modules/form": {
 		"prefix": "prmflb",
 		"body": [
 			"{{> modules/form field_type='label'",
-				"\tlabel_for=${1:label_for}",
-				"\t${2:label_class=${3:label_class}}",
-				"\tlabel_id=${4:label_id}",
-				"\tcontext=${5:context}",
-				"}}"
+			"\tlabel_for=${1:label_for}",
+			"\t${2:label_class=${3:label_class}}",
+			"\tlabel_id=${4:label_id}",
+			"\tcontext=${5:context}",
+			"}}"
 		],
 		"description": "partial input checkbox from 'modules/form'"
 	},
-	"errors partials from modules/form" : {
+	"errors partials from modules/form": {
 		"prefix": "prmfe",
 		"body": [
 			"{{> modules/form field_type='errors' errors=${1:errors_arrary} }}"
 		],
 		"description": "partial errors from 'modules/form'"
 	},
-	"input-radio partials from modules/form" : {
+	"input-radio partials from modules/form": {
 		"prefix": "prmfir",
 		"body": [
 			"{{> modules/form field_type='input-radio' name='${1:name}' id='${2:id}' field_label='${3:label}' }}"
 		],
 		"description": "partial input radio from 'modules/form'"
 	},
-	"input-checkbox partials from modules/form" : {
+	"input-checkbox partials from modules/form": {
 		"prefix": "prmfic",
 		"body": [
 			"{{> modules/form field_type='input-checkbox' name='${1:name}' id='${2:id}' field_label='${3:label}'}}"
 		],
 		"description": "partial input checkbox from 'modules/form'"
 	},
-	"input-file partials from modules/form" : {
+	"input-file partials from modules/form": {
 		"prefix": "prmfif",
 		"body": [
 			"{{> modules/form field_type='input-file'",
-				"\tfield_label='${1:field_label}'",
-				"\tname='${2:name}'",
-				"\tinput_id='${3:input_id}'",
-				"\tbutton_label='${4:button_label}'",
+			"\tfield_label='${1:field_label}'",
+			"\tname='${2:name}'",
+			"\tinput_id='${3:input_id}'",
+			"\tbutton_label='${4:button_label}'",
 			"}}"
 		],
 		"description": "partial input file from 'modules/form'"
 	},
-	"textarea partials from modules/form" : {
+	"textarea partials from modules/form": {
 		"prefix": "prmft",
 		"body": [
 			"{{> modules/form field_type='textarea'",
-				"id=${1:textarea_id}",
-				"class=${2:textarea_id}",
-				"name=${3:name}",
+			"id=${1:textarea_id}",
+			"class=${2:textarea_id}",
+			"name=${3:name}",
 			"}}"
 		],
 		"description": "partial textarea from 'modules/form'"
 	},
-	"form field input partials from modules/form" : {
+	"form field input partials from modules/form": {
 		"prefix": "prmffi",
 		"body": [
 			"{{> modules/form field_type='form-field-input'",
-				"\ttype='${1|text,password,number,date,email,button,reset,submit,radio,checkbox|}'",
-				"\tname='${2:name}'",
-				"\t${3:mandatory='yes'}",
-				"\tfield_label='${4:label}'",
-				"\t${5:placeholder='${6:Input Type Nuber}'}",
+			"\ttype='${1|text,password,number,date,email,button,reset,submit,radio,checkbox|}'",
+			"\tname='${2:name}'",
+			"\t${3:mandatory='yes'}",
+			"\tfield_label='${4:label}'",
+			"\t${5:placeholder='${6:Input Type Nuber}'}",
 			"}}"
 		],
 		"description": "partial form field input from 'modules/form'"
 	},
-	"form field select partials from modules/form" : {
+	"form field select partials from modules/form": {
 		"prefix": "prmffs",
 		"body": [
 			"{{> modules/form field_type='form-field-select'",
-				"\ttypeOf='${1|array,obj|}'",
-				"\tname='${2:name}'",
-				"\tselect_values='${3:array_or_object}'",
-				"\t${4:mandatory='yes'}",
-				"\tfield_label='${5:label}'",
-				"\t${6:placeholder='${7:Select}'}",
-				"\t${8:opt_label='${9:label}'}",
-				"\t${10:opt_value='${11:url}'}",
+			"\ttypeOf='${1|array,obj|}'",
+			"\tname='${2:name}'",
+			"\tselect_values='${3:array_or_object}'",
+			"\t${4:mandatory='yes'}",
+			"\tfield_label='${5:label}'",
+			"\t${6:placeholder='${7:Select}'}",
+			"\t${8:opt_label='${9:label}'}",
+			"\t${10:opt_value='${11:url}'}",
 			"}}"
 		],
 		"description": "partial Selelct from 'modules/form'"
 	},
-	"form field textarea partials from modules/form" : {
+	"form field textarea partials from modules/form": {
 		"prefix": "prmfft",
 		"body": [
 			"{{> modules/form field_type='form-field-textarea'",
-				"\tname='${1:name}'",
-				"\t${2:mandatory='yes'}",
-				"\tfield_label='${3:label}'",
-				"\t${4:placeholder='${5:text_placholder}'}",
-				"\t${6:value='${7:Value}'}",
+			"\tname='${1:name}'",
+			"\t${2:mandatory='yes'}",
+			"\tfield_label='${3:label}'",
+			"\t${4:placeholder='${5:text_placholder}'}",
+			"\t${6:value='${7:Value}'}",
 			"}}"
 		],
 		"description": "partial textarea from 'modules/form'"
 	},
-	"form field file partials from modules/form" : {
+	"form field file partials from modules/form": {
 		"prefix": "prmfff",
 		"body": [
 			"{{> modules/form field_type='form-field-file'",
-				"\tname='${1:name}'",
-				"\t${2:mandatory='yes'}",
-				"\tfield_label='${3:field_label}'",
-				"\tinput_id='${5:input_id}'",
-				"\tbutton_label='${6:button_label}'",
+			"\tname='${1:name}'",
+			"\t${2:mandatory='yes'}",
+			"\tfield_label='${3:field_label}'",
+			"\tinput_id='${5:input_id}'",
+			"\tbutton_label='${6:button_label}'",
 			"}}"
 		],
 		"description": "partial file from 'modules/form'"
 	},
-	"form field datepicker partials from modules/form" : {
+	"form field datepicker partials from modules/form": {
 		"prefix": "prmffd",
 		"body": [
 			"{{> modules/form field_type='form-field-datepicker'",
-				"\tname='${1:name}'",
-				"\t${2:mandatory='yes'}",
-				"\tfield_label='${3:label}'",
+			"\tname='${1:name}'",
+			"\t${2:mandatory='yes'}",
+			"\tfield_label='${3:label}'",
 			"}}"
 		],
 		"description": "partial datepicker from 'modules/form'"
 	},
-	"form field timepicker partials from modules/form" : {
+	"form field timepicker partials from modules/form": {
 		"prefix": "prmfftp",
 		"body": [
 			"{{> modules/form field_type='form-field-timepicker'",
-				"\tname='${1:name}'",
-				"\t${2:mandatory='yes'}",
-				"\tfield_label='${3:label}'",
+			"\tname='${1:name}'",
+			"\t${2:mandatory='yes'}",
+			"\tfield_label='${3:label}'",
 			"}}"
 		],
 		"description": "partial timepicker from 'modules/form'"
 	},
-	"form field addon partials from modules/form" : {
+	"form field addon partials from modules/form": {
 		"prefix": "prmffa",
 		"body": [
 			"{{> modules/form field_type='form-field-addon'",
-				"\ttype='${1|text,password,number,date,email|}'",
-				"\tplacement='${2|start,end|}'",
-				"\taddon_text='${3:text}'",
-				"\tfield_label='${4:label}'",
+			"\ttype='${1|text,password,number,date,email|}'",
+			"\tplacement='${2|start,end|}'",
+			"\taddon_text='${3:text}'",
+			"\tfield_label='${4:label}'",
 			"}}"
 		],
 		"description": "partial addon from 'modules/form'"
 	},
+	"form field checkbox partials with array from modules/form": {
+		"prefix": "prmffca",
+		"body": [
+			"{{> modules/form field_type='form-field-checkbox'",
+			"\tname='${1:name}'",
+			"\t${2:mandatory='yes'}",
+			"\tfield_label='${3:label}'",
+			"\ttypeOf='array'",
+			"\tselect_values=${4:array}",
+			"\tcheck=${5:array_check_value}",
+			"}}"
+		],
+		"description": "partial checkbox with array from 'modules/form'"
+	},
+	"form field checkbox partials with object from modules/form": {
+		"prefix": "prmffco",
+		"body": [
+			"{{> modules/form field_type='form-field-checkbox'",
+			"\tname='${1:name}'",
+			"\t${2:mandatory='yes'}",
+			"\tfield_label='${3:label}'",
+			"\ttypeOf='obj'",
+			"\tselect_values=${4:obj}",
+			"opt_value= '${5:key_of_value}'",
+			"opt_label= '${6:key_of_label}'",
+			"response_type='${7:|seperate,inline|}'",
+			"\tcheck=${8:array_check_value}",
+			"}}"
+		],
+		"description": "partial checkbox with object from 'modules/form'"
+	},
+	"form field radio partials with array from modules/form": {
+		"prefix": "prmffra",
+		"body": [
+			"{{> modules/form field_type='form-field-checkbox'",
+			"\tname='${1:name}'",
+			"\t${2:mandatory='yes'}",
+			"\tfield_label='${3:label}'",
+			"\ttypeOf='array'",
+			"\tselect_values=${4:array}",
+			"\tcheck=${5:array_check_value}",
+			"}}"
+		],
+		"description": "partial checkbox with array from 'modules/form'"
+	},
+	"form field Radio partials with object from modules/form": {
+		"prefix": "prmffco",
+		"body": [
+			"{{> modules/form field_type='form-field-checkbox'",
+			"\tname='${1:name}'",
+			"\t${2:mandatory='yes'}",
+			"\tfield_label='${3:label}'",
+			"\ttypeOf='obj'",
+			"\tselect_values=${4:obj}",
+			"opt_value= '${5:key_of_value}'",
+			"opt_label= '${6:key_of_label}'",
+			"response_type='${7:|seperate,inline|}'",
+			"\tcheck=${8:array_check_value}",
+			"}}"
+		],
+		"description": "partial checkbox with object from 'modules/form'"
+	},
+	
 	// overlay
-	"overlay partials from modules/overlay/open" : {
+	"overlay partials from modules/overlay/open": {
 		"prefix": "proo",
 		"body": [
 			"{{> modules/overlay/open",
-				"\tid='${1:overlay_id}'",
-				"\tclass='${2:overlay_class}'",
-				"\ttitle='${3:overlay_title}'",
-				"\toverlay_type='${4|type-1,type-2|}'",
+			"\tid='${1:overlay_id}'",
+			"\tclass='${2:overlay_class}'",
+			"\ttitle='${3:overlay_title}'",
+			"\toverlay_type='${4|type-1,type-2|}'",
 			"}}"
 		],
 		"description": "partial overlay open from 'modules/overlay'"
 	},
-	"Overlay partials from modules/overlay/close" : {
+
+	"Overlay partials from modules/overlay/close": {
 		"prefix": "proc",
 		"body": "{{> modules/overlay/close}}",
 		"description": "partial overlay open from 'modules/overlay'"
 	},
 	// loader
-	"type of loaders from modules/loader" : {
+	"type of loaders from modules/loader": {
 		"prefix": "loader",
 		"body": [
 			"{{> modules/loader type='${1|main,ajax|}'}}"
 		],
 		"description": "Partial for loader with multiple type"
 	},
-	"list of webicons" : {
+	"list of webicons": {
 		"prefix": "icons",
 		"body": "{{> modules/icons name='${1|home,docs,logout,settings|}' }}",
 		"description": "List of all webicons"
 	},
 	// section form 
-	"Section box" : {
+	"Section box": {
 		"prefix": "sb",
 		"body": [
 			"<section>",
-				"<article class='box'>",
-					"<header class='box-header'>",
-						"${1:header}",
-					"</header>",
-					"<main class='box-content'>",
-						"${0:Content}",
-					"</main>",
-				"</article>",
+			"<article class='box'>",
+			"<header class='box-header'>",
+			"${1:header}",
+			"</header>",
+			"<main class='box-content'>",
+			"${0:Content}",
+			"</main>",
+			"</article>",
 			"</section>"
 		],
 		"description": "Execute section box"
