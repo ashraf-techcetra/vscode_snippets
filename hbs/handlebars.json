@@ -251,9 +251,9 @@
 			"\tfield_label='${3:label}'",
 			"\ttypeOf='obj'",
 			"\tselect_values=${4:obj}",
-			"opt_value= '${5:key_of_value}'",
-			"opt_label= '${6:key_of_label}'",
-			"response_type='${7:|seperate,inline|}'",
+			"\topt_value= '${5:key_of_value}'",
+			"\topt_label= '${6:key_of_label}'",
+			"\tresponse_type='${7|seperate,inline|}'",
 			"\tcheck=${8:array_check_value}",
 			"}}"
 		],
@@ -274,7 +274,7 @@
 		"description": "partial checkbox with array from 'modules/form'"
 	},
 	"form field Radio partials with object from modules/form": {
-		"prefix": "prmffco",
+		"prefix": "prmffro",
 		"body": [
 			"{{> modules/form field_type='form-field-checkbox'",
 			"\tname='${1:name}'",
@@ -282,9 +282,9 @@
 			"\tfield_label='${3:label}'",
 			"\ttypeOf='obj'",
 			"\tselect_values=${4:obj}",
-			"opt_value= '${5:key_of_value}'",
-			"opt_label= '${6:key_of_label}'",
-			"response_type='${7:|seperate,inline|}'",
+			"\topt_value= '${5:key_of_value}'",
+			"\topt_label= '${6:key_of_label}'",
+			"\tresponse_type='${7|seperate,inline|}'",
 			"\tcheck=${8:array_check_value}",
 			"}}"
 		],
