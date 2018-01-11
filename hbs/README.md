@@ -30,6 +30,10 @@
 |Prefix|Stands for|Description
 ---|---|---
 [prmffi](#prmffi-partial-modules-form-field-input)|partial modules form field input | Extract [input](#prmfi-partial-modules-form-input) inside [form-field](#flf-form-layout-field)
+[prmffca](#prmffi-partial-modules-form-field-checkbox-array)|partial modules form field checkbox array | Extract [input](#prmfi-partial-modules-form-input-checkbox) inside [form-field](#flf-form-layout-field) with array
+[prmffco](#prmffi-partial-modules-form-field-checkbox-object)|partial modules form field checkbox object | Extract [input](#prmfi-partial-modules-form-input-checkbox) inside [form-field](#flf-form-layout-field) with object
+[prmffra](#prmffi-partial-modules-form-field-radio-array)|partial modules form field radio array | Extract [input](#prmfi-partial-modules-form-input-radio) inside [form-field](#flf-form-layout-field) with array
+[prmffro](#prmffi-partial-modules-form-field-radio-object)|partial modules form field radio object | Extract [input](#prmfi-partial-modules-form-input-radio) inside [form-field](#flf-form-layout-field) with object
 [prmffa](#prmffa-partial-modules-form-field-addon)|partial modules form field addon | Extract [input](#prmfi-partial-modules-form-input) with addon text inside [form-field](#flf-form-layout-field)
 [prmffd](#prmffd-partial-modules-form-field-datepicker)|partial modules form field datepicker | Extract [input](#prmfi-partial-modules-form-input) with calender icon, inside [form-field](#flf-form-layout-field)
 [prmfftp](#prmfftp-partial-modules-form-field-timepicker)|partial modules form field timepicker | Extract [input](#prmfi-partial-modules-form-input) with time icon, inside [form-field](#flf-form-layout-field)
