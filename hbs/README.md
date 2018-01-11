@@ -139,7 +139,59 @@
   placeholder='eg. Jhon Doe'
 }}
 ```
+
+### prmffca (partial modules form field checkbox array)
+```hbs
+{{> modules/form field_type='form-field-checkbox'
+  name='hobbies'
+  mandatory='yes'
+  field_label='Hobbies'
+  typeOf='array'
+  select_values=hobbies
+  check=checked_hobbies
+}}
+```
+### prmffco (partial modules form field checkbox object)
+```hbs
+{{> modules/form field_type='form-field-checkbox'
+  name='hobbies'
+  mandatory='yes'
+  field_label='label'
+  typeOf='obj'
+  select_values=hobbies
+  opt_value= 'id'
+  opt_label= 'name'
+  response_type='seperate'
+  check=checked_hobbies
+}}
+```
+### prmffra (partial modules form field radio array)
+```hbs
+{{> modules/form field_type='form-field-checkbox'
+  name='gender'
+  mandatory='yes'
+  field_label='label'
+  typeOf='array'
+  select_values=gender
+  check=checked_gender
+}}
+```
+### prmffro (partial modules form field radio object)
+```hbs
+{{> modules/form field_type='form-field-checkbox'
+  name='name'
+  mandatory='yes'
+  field_label='label'
+  typeOf='obj'
+  select_values=cities
+  opt_value= 'id'
+  opt_label= 'name'
+  response_type='inline'
+  check=cities.check
+}}
+```
 ### prmffa (partial modules form field addon )
+
 ```hbs
 {{> modules/form field_type='form-field-addon'
   type='text'
